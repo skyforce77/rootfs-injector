@@ -1,0 +1,12 @@
+:debut
+
+PRINT "Entrez des lettres:\n"
+
+:retour
+GET_CHAR r1
+IF_NE r1 '\n' ELSE >fin
+	PUT_CHAR r1
+	JUMP >retour
+:fin
+
+PUT_CHAR '\n'
